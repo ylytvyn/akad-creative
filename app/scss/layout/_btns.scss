@@ -1,0 +1,17 @@
+.btn {
+    font: 700 14px $title;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 15px 40px;
+    transition: all .3s;
+
+    &--green {
+        background-color: $green;
+        color: #fff;
+
+        &:hover {
+            color: $grey;
+            box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, .2);
+        }
+    }
+}

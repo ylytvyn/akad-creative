@@ -1,0 +1,90 @@
+.header {
+    background: url('../images/header-bg.jpg') no-repeat bottom center;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        @include pos($t: 0, $b: 0, $l: 0, $r: 0);
+        content: '';
+        background-color: rgba(255, 255, 255, .85);
+    }
+
+    &__menu {
+        position: relative;
+    }
+
+    &__burger {
+        font-size: 30px;
+    }
+
+    &__block {
+        margin: 19vh 0 14vh;
+    }
+
+    &__sub {
+        font: 700 18px $title;
+        text-transform: uppercase;
+        background-color: $green;
+        padding: 2px 20px;
+    }
+
+    &__title {
+        border: 10px solid;
+        text-transform: uppercase;
+        font: 700 46px $title;
+        padding: 15px 40px;
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        margin-bottom: -25px;
+    }
+
+    &__img {
+        border-radius: 0;
+        margin: 0 auto 25px;
+        display: block;
+
+        @media (min-width: $mobile) {
+            margin-bottom: -10vh;
+        }
+    }
+}
+
+.logo {
+    color: $grey;
+    text-transform: uppercase;
+    font: 700 18px $title;
+    transition: all .3s;
+
+    &:hover {
+        color: $green;
+        text-decoration: none;
+    }
+}
+
+.navbar {
+    .nav-item {
+        .nav-link {
+            text-transform: uppercase;
+            font: 700 13px $title;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &.active {
+            .nav-link {
+                color: $green;
+            }
+        }
+    }
+
+    &-toggler {
+        border: none;
+    }
+}

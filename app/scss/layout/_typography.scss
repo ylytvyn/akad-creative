@@ -1,0 +1,28 @@
+.title {
+    font: 700 30px $title;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+
+    &::before {
+        @include size(70px, 20px);
+        @include pos($b: -2px, $l: 1px);
+        content: '';
+        background-color: $green;
+    }
+
+    &__text {
+        position: relative;
+    }
+
+    &-block {
+        margin-bottom: 10vh;
+    }
+}
+
+.description {
+    width: 75%;
+    margin: 0 auto;
+    line-height: 24px;
+}

@@ -1,0 +1,24 @@
+.why {
+    padding: 30vh 0 20vh;
+
+    &__block {
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__icon {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+
+    &__main {
+        font: 700 18px $title;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        color: #999;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
