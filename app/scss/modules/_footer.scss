@@ -1,0 +1,44 @@
+.footer {
+    padding: 45px 0;
+    color: #9a9a9a;
+    text-transform: uppercase;
+    
+    &__copyright {
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        margin-right: 40px;
+        position: relative;
+        margin-bottom: 20px;
+
+        @media (min-width: $mobile) {
+            margin-bottom: 0;
+        }
+
+        &::after {
+            @include pos($r: -22px);
+            content: '-';
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+    }
+
+    &__link {
+        color: currentColor;
+        font-size: 20px;
+        transition: all .3s;
+
+        @media (min-width: $mobile) {
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: $green;
+            text-decoration: none;
+        }
+    }
+}

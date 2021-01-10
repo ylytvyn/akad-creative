@@ -1,0 +1,92 @@
+.newsletters {
+    background-color: $green;
+    padding: 50px 0;
+
+    &__title {
+        font: 700 20px/35px $title;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        @media (min-width: $mobile) {
+            font-size: 30px;
+            line-height: 48px;
+        }
+    }
+
+    &__form {
+        background-color: #fff;
+        padding: 15px 25px 25px;
+    }
+
+    &__sub {
+        font: 700 24px/36px $title;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        color: #999;
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+
+    &__field {
+        position: relative;
+        height: auto;
+        padding: 0;
+        border-radius: 0;
+        border-right: none;
+        text-transform: uppercase;
+        font: 700 12px/25px $title;
+
+        input {
+            padding: 10px 20px;
+            text-transform: uppercase;
+            width: 100%;
+            
+            &::-webkit-input-placeholder {
+                color: #cdcdcd;
+                transition: all .3s;
+            }
+
+            &:focus {
+                outline: none;
+
+                &::-webkit-input-placeholder {
+                    color: transparent;
+                }
+
+                + label {
+                    @extend .label-up;
+                }
+            }
+
+            &:not(:placeholder-shown) {
+                + label {
+                    @extend .label-up;
+                }
+            }
+        }
+
+        label {
+            @include pos($t: 10px, $l: 15px);
+            color: #cdcdcd;
+            transition: all .3s;
+            opacity: 0;
+            pointer-events: none;
+            padding: 0 5px;
+        }
+    }
+
+    &__btn {
+        border: none;
+    }
+}
+
+.label-up {
+    top: -14px;
+    opacity: 1;
+    color: $green;
+    background-color: #fff;
+}

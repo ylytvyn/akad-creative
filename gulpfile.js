@@ -1,12 +1,14 @@
 const SOURCES = {
 	css: [
 		'./node_modules/bootstrap/dist/css/bootstrap.min.css',
+		'./node_modules/aos/dist/aos.css'
 		// './node_modules/bootstrap/dist/css/bootstrap-grid.min.css'
 	],
 	js: [
 		'./node_modules/jquery/dist/jquery.min.js',
 		'./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
-		'./node_modules/isotope-layout/dist/isotope.pkgd.min.js'
+		'./node_modules/isotope-layout/dist/isotope.pkgd.min.js',
+		'./node_modules/aos/dist/aos.js'
 	]
 };
 

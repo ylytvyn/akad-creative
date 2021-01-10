@@ -1,0 +1,27 @@
+.navbar {
+    padding: 0;
+
+    &-toggler {
+        padding: 0;
+        position: relative;
+        z-index: 2;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    ion-icon {
+        font-size: 40px;
+    }
+
+    &-collapse {
+        @media (max-width: $mobile) {
+            @include pos($r: -15px, $t: -15px, $z: 1);
+            width: 190px;
+            background:#fff;
+            padding: 55px 20px 10px;
+            box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, .2);
+        }
+    }
+}

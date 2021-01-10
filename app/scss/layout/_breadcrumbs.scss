@@ -1,0 +1,14 @@
+.breadcrumbs {
+    font: 700 14px $title;
+    text-transform: uppercase;
+
+    &__link {
+        color: $grey;
+        transition: all .3s;
+
+        &:hover {
+            color: darken($green, 30%);
+            text-decoration: none;
+        }
+    }
+}

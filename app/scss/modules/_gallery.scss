@@ -1,0 +1,66 @@
+.gallery {
+    margin-bottom: 5vh;
+
+    @media (min-width: $mobile) {
+        margin-bottom: 20vh;
+    }
+
+    &__list {
+        margin-right: -4%;
+    }
+
+    &__item {
+        width: 45%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+
+        @media (min-width: $mobile) {
+            width: 30%;
+            margin-right: 3%;
+            margin-bottom: 3%;
+        }
+    }
+
+    &__title {
+        font: 700 20px/38px $title;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        @media (min-width: $mobile) {
+            font-size: 30px;
+            line-height: 48px;
+        }
+    }
+}
+
+.filter {
+
+    &__item {
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        font: 700 14px $title;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        transition: all .3s;
+        cursor: pointer;
+
+        @media (min-width: $mobile) {
+            padding: 5px 20px;
+        }
+
+        &:hover {
+            color: $green;
+        }
+
+        &--active {
+            background-color: $green;
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

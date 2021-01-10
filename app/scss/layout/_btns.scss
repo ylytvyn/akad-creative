@@ -5,13 +5,18 @@
     padding: 15px 40px;
     transition: all .3s;
 
+    &:hover {
+        color: $grey;
+        box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, .2);
+    }
+
     &--green {
         background-color: $green;
         color: #fff;
+    }
 
-        &:hover {
-            color: $grey;
-            box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, .2);
-        }
+    &--white {
+        background-color:  #fff;
+        color: $green;
     }
 }

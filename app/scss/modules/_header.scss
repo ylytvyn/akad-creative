@@ -3,6 +3,15 @@
     background-size: cover;
     position: relative;
 
+    &--page {
+        background-image: url('../images/header-pages.jpg');
+        height: 70vh;
+
+        &::before {
+            display: none;
+        }
+    }
+
     &::before {
         @include pos($t: 0, $b: 0, $l: 0, $r: 0);
         content: '';
@@ -18,7 +27,11 @@
     }
 
     &__block {
-        margin: 19vh 0 14vh;
+        margin: 7vh 0;
+
+        @media (min-width: $mobile) {
+            margin: 19vh 0 14vh;
+        }
     }
 
     &__sub {
@@ -46,13 +59,22 @@
     }
 
     &__img {
-        border-radius: 0;
         margin: 0 auto 25px;
         display: block;
 
         @media (min-width: $mobile) {
             margin-bottom: -10vh;
         }
+    }
+
+    &__name {
+        font: 700 36px $title;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__page {
+        margin-top: 25vh;
     }
 }
 
