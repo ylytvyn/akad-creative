@@ -43,8 +43,8 @@
 						  <li class="nav-item">
 							<a class="nav-link" href="index.html#portfolio">Portfolio</a>
 						  </li>
-						  <li class="nav-item">
-							<a class="nav-link active" href="blog.html">Blog</a>
+						  <li class="nav-item active">
+							<a class="nav-link" href="blog.html">Blog</a>
 						  </li>
 						  <li class="nav-item">
 							<a class="nav-link" href="contact.html">Contact Us</a>
@@ -72,8 +72,64 @@
                 <div class="col-12 col-md-8">
                     Blog
                 </div>
-                <aside class="col-12 col-md-3 offset-md-1" data-aos="fade-top">
-                    sidebar
+                <aside class="col-12 col-md-3 offset-md-1 sidebar" data-aos="fade-top">
+
+                    <form action="#" class="input-group">
+                        <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
+                        <button type="submit" class="input-group-append">
+                            <span class="input-group-text">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </span>
+                        </button>
+                    </form>
+
+                    <div class="sidebar__block">
+                        <h3 class="sidebar__title">Posts</h3>
+
+                        <ul class="nav nav-tabs sidebar__tabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="latest-tab" data-toggle="tab" href="#latest" role="tab" aria-controls="latest" aria-selected="true">
+                                    Latest
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="popular-tab" data-toggle="tab" href="#popular" role="tab" aria-controls="popular" aria-selected="false">
+                                    Popular
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="comments" aria-selected="false">
+                                    Comments
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="latest" role="tabpanel" aria-labelledby="latest-tab">
+                                <ul class="sidebar__posts">
+                                    <li class="sidebar__posts-item d-flex align-items-center">
+                                        <a href="#" class="sidebar__posts-img">
+                                            <img src="images/posts/1.jpg" alt="post">
+                                            <ion-icon name="exit-outline"></ion-icon>
+                                        </a>
+                                        <div class="sidebar__posts-text">
+                                            <h4 class="sidebar__posts-title">Magna mollis ultricies</h4>
+                                            <p class="sidebar__posts-date">3th oct 2012</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-pane fade" id="popular" role="tabpanel" aria-labelledby="popular-tab">
+                                2
+                            </div>
+
+                            <div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">
+                                3
+                            </div>
+                        </div>
+                    </div>
+
                 </aside>
             </div>
         </div>
@@ -106,7 +162,7 @@
 		</div>
 	</section>
 
-	<footer class="footer" data-aos="fade-in">
+	<footer class="footer" data-aos="fade-top">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-8 mb-5 mb-md-0">
