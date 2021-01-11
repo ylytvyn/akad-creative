@@ -25,5 +25,15 @@
 
 		// Animations
 		AOS.init();
+
+		// Header
+		$(window).scroll(() => {
+			if ($(window).scrollTop() > 30) {
+				$('.header--page').addClass('header--small');
+			} else {
+				$('.header--page').removeClass('header--small');
+			}
+		});
+		
 	});
 })(jQuery);

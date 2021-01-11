@@ -6,9 +6,18 @@
     &--page {
         background-image: url('../images/header-pages.jpg');
         height: 70vh;
+        transition: all .5s;
 
         &::before {
             display: none;
+        }
+    }
+
+    &--small {
+        height: 35vh;
+
+        .header__page {
+            margin-top: 10vh;
         }
     }
 
@@ -75,6 +84,7 @@
 
     &__page {
         margin-top: 25vh;
+        transition: all .5s;
     }
 }
 
@@ -87,6 +97,10 @@
     &:hover {
         color: $green;
         text-decoration: none;
+
+        .header--page & {
+            color: darken($green, 30%);
+        }
     }
 }
 
@@ -102,6 +116,10 @@
         &.active {
             .nav-link {
                 color: $green;
+
+                .header--page & {
+                    color: darken($green, 30%);
+                }
             }
         }
     }

@@ -9,7 +9,10 @@
 
 	<link rel="icon" href="images/favicon.png">
 
+	<!--build:css css/styles.min.css-->
+	<link rel="stylesheet" href="css/bundle.min.css">
 	<link rel="stylesheet" href="css/styles.min.css">
+	<!--endbuild-->
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,7 +34,7 @@
 						  <li class="nav-item">
 							<a class="nav-link" href="index.html">Home</a>
 						  </li>
-						  <li class="nav-item active">
+						  <li class="nav-item">
 							<a class="nav-link" href="about.html">About Us</a>
 						  </li>
 						  <li class="nav-item">
@@ -43,7 +46,7 @@
 						  <li class="nav-item">
 							<a class="nav-link" href="blog.html">Blog</a>
 						  </li>
-						  <li class="nav-item">
+						  <li class="nav-item active">
 							<a class="nav-link" href="contact.html">Contact Us</a>
 						  </li>
 						</ul>
@@ -52,12 +55,12 @@
 			</div>
 
             <div class="header__page text-center">
-                <h1 class="header__name">About Us</h1>
+                <h1 class="header__name">Contact Us</h1>
                 <ul class="breadcrumbs d-flex justify-content-center">
                     <li class="breadcrumb-item">
                         <a href="index.html" class="breadcrumbs__link">Home</a>
                     </li>
-                    <li class="breadcrumb-item">About</li>
+                    <li class="breadcrumb-item">Contact</li>
                 </ul>
             </div>
 		</div>
@@ -166,6 +169,9 @@
 	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 	<!-- -->
 
-	<script src="js/main.min.js"></script>
+	<!--build:js js/main.min.js -->
+	<script src="js/bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<!--endbuild-->
 </body>
 </html>
