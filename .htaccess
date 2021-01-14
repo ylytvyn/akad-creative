@@ -1,0 +1,8 @@
+
+# HTID:16490489: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:16490489:
+
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf|js|css|pdf|woff2|woff|eot|ttf)$">
+  Header set Cache-Control "max-age=31536000"
+</FilesMatch>

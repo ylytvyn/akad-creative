@@ -24,12 +24,12 @@ const cssnano 		= require("cssnano");
 const imagemin 		= require("gulp-imagemin");
 const del 			= require("del");
 const useref 		= require('gulp-useref');
-// const uglify 		= require('gulp-uglify');
+const terser 		= require('gulp-terser');
 const gulpIf 		= require('gulp-if');
 const wait 			= require('gulp-wait');
 const notify 		= require('gulp-notify');
 const concat		= require('gulp-concat');
-const terser = require('gulp-terser');
+
 
 // Paths
 const paths = {

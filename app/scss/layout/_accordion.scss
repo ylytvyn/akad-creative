@@ -1,0 +1,80 @@
+.accordion {
+    .card {
+        border: none;
+        margin-bottom: 20px;
+
+        &-header {
+            background: none;
+            border: none;
+            padding: 0 0 10px;
+
+            h2 {
+                text-transform: uppercase;
+                font: 700 14px $title;
+                cursor: pointer;
+                transition: all .3s;
+
+                &[aria-expanded="true"] {
+                    color: $green;
+                }
+            }
+        }
+
+        &-body {
+            padding: 0 0 40px;
+        }
+    }
+}
+
+.categories {
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        border-bottom: 1px solid #999;
+    }
+
+    &__link {
+        flex-grow: 1;
+        padding: 15px;
+        color: $grey;
+        transition: all .3s;
+
+        &:hover {
+            color: $green;
+            text-decoration: none;
+        }
+    }
+
+    &__qty {
+        margin-right: 15px;
+    }
+}
+
+.tags {
+
+    &__item {
+        margin: 0 5px 5px 0;
+    }
+
+    .badge {
+        border-radius: 0;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        font: 700 12px $title;
+        transition: all .3s;
+
+        &-custom {
+            background: #e5e5e5;
+            color: #999;
+
+            &:hover {
+                background: $green;
+                color: $grey;
+                box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, .2);
+            }
+        }
+    }
+}

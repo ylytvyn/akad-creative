@@ -34,6 +34,5 @@
 				$('.header--page').removeClass('header--small');
 			}
 		});
-		
 	});
 })(jQuery);

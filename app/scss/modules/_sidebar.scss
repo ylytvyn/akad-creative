@@ -1,5 +1,9 @@
 .sidebar {
 
+    &__block {
+        margin-bottom: 40px;
+    }
+
     &__title {
         font: 700 14px $title;
         text-transform: uppercase;
@@ -37,7 +41,7 @@
     &__posts {
 
         &-item {
-
+            margin-bottom: 15px;
         }
 
         &-img {
@@ -78,16 +82,15 @@
             }
         }
 
-        &-text {
-
-        }
-
         &-title {
-
+            text-transform: uppercase;
+            font: 700 14px $title;
+            margin-bottom: 5px;
         }
 
         &-date {
-
+            font-size: 12px;
+            color: #9a9a9a;
         }
     }
 }

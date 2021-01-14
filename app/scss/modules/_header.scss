@@ -1,10 +1,18 @@
 .header {
-    background: url('../images/header-bg.jpg') no-repeat bottom center;
-    background-size: cover;
+    background: #fff;
+    background: linear-gradient(180deg, #fff 0%, #474747 100%);
     position: relative;
 
+    @media (min-width: $mobile) {
+        background: url('../images/header-bg.jpg') no-repeat bottom center;
+        background-size: cover;
+
+        &--page {
+            background-image: url('../images/header-pages.jpg');
+        }
+    }
+
     &--page {
-        background-image: url('../images/header-pages.jpg');
         height: 70vh;
         transition: all .5s;
 
